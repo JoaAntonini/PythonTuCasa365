@@ -1,0 +1,44 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<header id="header">
+    <h1 class="headerTitle">LAMPARAS</h1>
+    <div>
+        <img src="../../static/AppCoder/assets/img/luces.jpg" class="img-fluid headerImagenes" alt="Luces">
+    </div>
+</header>
+    <div class='container-fluid'>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2>Catálogo</h2>
+                            <p class="card-text">Encontra todos los modelos que tenemos para ofrecerte, acá</p>
+                                <a href="{% url 'LamparasList' %}" class="btn btn-primary">Ingresar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2>Nuestros Materiales</h2>
+                            <p class="card-text">Conoce los tipos de materiales con los que trabajamos</p>
+                                <a href="{% url 'Inicio' %}"class="btn btn-primary">Ingresar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2>Combos</h2>
+                            <p class="card-text">Te recomendamos las mejores combinaciones para que dejes tu casa con estilo</p>
+                            <a href="{% url 'Inicio' %}" class="btn btn-primary">Ingresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>			
+    </div>
+  
+{% endblock %}

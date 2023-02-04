@@ -1,0 +1,62 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<header id="header">
+        <h1 class="headerTitle">Nuestros Productos</h1>
+    
+			<div class='container-fluid'>
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="alineaFotos1">
+							<img src="../../static/AppCoder/assets/img/sillon.jpg"class="img-fluid headerImagenes" alt="Sillones">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="alineaFotos1">
+					    	<img src="../../static/AppCoder/assets/img/mesa1.jpg" class="img-fluid headerImagenes"  alt="Mesas">
+				    	</div>
+				    </div>
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="alineaFotos1">
+							<img src="../../static/AppCoder/assets/img/lampara.jpg"  class="img-fluid headerImagenes" alt="Lamparas">
+				        </div>
+				    </div>
+				</div>			
+			</div>
+        </header>
+        <section id="nosotros">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--contenedor info nosotros-->
+                        <div class="col-md-6 col-lg-6">
+                            <div class="accordion formatoAcordeon">	
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button tituloAcordeon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Nosotros</button>
+                                    </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Somos una empresa con 10 años en el mercado. Empezamos vendiendo muebles pequeños en el barrio de Colegiales y con el paso del tiempo, con mucha dedicación y trabajo y gracias a a nuestros clientes pudimos crecer y llegar a todo el país. 
+                                                    <span class="textBold">A través de nuestra atención 100% digital logramos llegar a todas las casas, a precios accesibles y con productos de buena calidad. </span>Esperamos poder seguir acompañanado a nuestros clientes muchos años mas y continuar ofreciendo los productos que necesitan, para hacer de su casa un ambiente comodo y hermoso.</p>
+                                            </div>
+                                        </div>
+                                </div>				
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Servicios</button>
+                                    </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Te ofrecemos los productos que necesitas, los llevamos a donde nos pidas y tambien te ofrecemos el asesoramiento correspondiente sobre los tipos de materiales, medidas, duración de cada producto y la mejor manera de mantenerlos.</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>	
+                        </div>	
+                    </div>							
+            </section>
+
+
+{% endblock %}
+

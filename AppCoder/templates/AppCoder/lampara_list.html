@@ -1,0 +1,35 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>Lamparas</h1>
+
+        <div class='container-fluid'>
+            <div class="row">
+                    {% for lampara in object_list %}
+                    <div class="col-sm-6 col-md-6 col-lg-3">                        
+                        <div class="card" id="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p>Modelo {{lampara.nombre}}</p>
+                                <p>Precio $ {{lampara.precio}}</p>
+                                <p>Tamaño {{lampara.tamaño}}</p>
+                                <p>Stock {{lampara.stock}}</p>
+                                <P>
+                                    <a href="{% url 'LamparasEditar' lampara.id %}" class="card-link"> Editar</a>
+                                    <a href="{% url 'LamparasEliminar' lampara.id %}" class="card-link"> Eliminar</a>
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto marginTop">
+            <button class="btn  btn-dark" type="button">
+                <a href="{% url 'LamparaFormulario' %}">Agregar nueva Lampara</a>
+            </button>
+        </div>
+
+{% endblock %}

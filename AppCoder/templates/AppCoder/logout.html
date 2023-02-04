@@ -1,0 +1,10 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+    <h1>Sesión cerrada</h1>
+    <button>
+        <a class="nav-link" aria-current="page" href="{% url 'Inicio' %}">Volver al inicio</a>
+    </button>
+
+{% endblock %}

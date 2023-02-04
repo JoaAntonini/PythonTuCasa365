@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+            
+        <h1>Busqueda de modelos</h1>
+        <h2>Sillones</h2>
+        <form action="/AppCoder/buscarSillon/" method="GET">          
+            <input type="text" name="sillon" id="sillon">          
+            <input type="submit" value="Buscar" />
+        </form>
+        <h2>Mesas</h2>
+        <form action="/AppCoder/buscarMesa/" method="GET">          
+            <input type="text" name="mesa" id="mesa">          
+            <input type="submit" value="Buscar" />
+        </form>
+        <h2>Lamparas</h2>
+        <form action="/AppCoder/buscarLampara/" method="GET">          
+            <input type="text" name="lampara" id="lampara">          
+            <input type="submit" value="Buscar" />
+        </form>
+        <button class="marginTop">
+            <a href="{% url 'Inicio' %}" class="btn btn-primary">Volver</a>
+        </button>
+{% endblock %}
